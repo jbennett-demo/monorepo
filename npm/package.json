@@ -2,10 +2,47 @@
   "name": "jbennett-demo-npm",
   "version": "1.0.0",
   "private": true,
-  "description": "npm service in the jbennett-demo monorepo",
+  "description": "Orders API (Node.js) in the monorepo",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
   "dependencies": {
-    "is-odd": "^3.0.0"
+    "axios": "^1.21.1",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "ioredis": "^6.1.0",
+    "is-odd": "^3.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.13.0",
+    "morgan": "^1.12.1",
+    "pg": "^8.23.1",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^14.0.3",
+    "winston": "^3.19.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.15.0",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.10.1",
+    "supertest": "^7.3.2",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.9.3"
   }
 }
